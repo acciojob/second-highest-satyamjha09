@@ -9,14 +9,14 @@
 <body>	
 	<script>
 		function secondHighest(arr) {
-			let allsame = arr.every((element) => element === arr[0])
+			let allSame = arr.every((element) => element === arr[0]);
 
-			if(!arr.length || arr.length === 1 || allsame) {
-				return -Infinity 
-			} else if {
-				const secondHighest = arr.sort((a, b) => b - a)[1];
-				return  secondHighest 
-			}
+            if (!arr.length || arr.length === 1 || allSame) {
+                return -Infinity;
+            } else {
+                const secondHighest = arr.slice().sort((a, b) => b - a)[1];
+                return secondHighest;
+            }
 		                      
 		       	
 		}
